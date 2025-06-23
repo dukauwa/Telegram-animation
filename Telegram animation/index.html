@@ -9,40 +9,46 @@
   <!-- GSAP CDN -->
   <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
   <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <!-- Phosphor Icons CDN -->
+  <link rel="stylesheet" href="https://unpkg.com/phosphor-icons@1.4.1/src/css/phosphor.css" />
 </head>
 <body>
   <div class="phone-frame">
     <header class="profile-header">
       <div class="profile-main">
-        <img src="assets/profile-placeholder.svg" alt="Profile Picture" class="profile-pic">
-        <div class="profile-title-row">
-          <h1 class="profile-name">Ronald Copper</h1>
-          <img src="assets/icon1.svg" alt="Emoji" class="profile-emoji">
+        <div class="profile-nav-row">
+          <div class="back-icon ph-icon-bg"><i class="ph ph-caret-left"></i></div>
+          <div class="profile-info-row">
+            <span class="profile-name">Ronald Copper</span>
+            <span class="profile-emoji">🧞‍♂️</span>
+            <span class="online-status">online</span>
+          </div>
+          <div class="menu-icon ph-icon-bg"><i class="ph ph-dots-three-outline"></i></div>
         </div>
-        <p class="profile-status">online</p>
+        <img src="assets/profile-placeholder.svg" alt="Profile Picture" class="profile-pic">
         <!-- Floating decorative icons -->
         <img src="assets/icon1.svg" alt="" class="float-icon icon1">
         <img src="assets/icon2.svg" alt="" class="float-icon icon2">
         <img src="assets/icon3.svg" alt="" class="float-icon icon3">
         <img src="assets/icon4.svg" alt="" class="float-icon icon4">
         <img src="assets/icon5.svg" alt="" class="float-icon icon5">
-        <div class="profile-actions">
-          <button><span>💬</span>Message</button>
-          <button><span>🔕</span>Unmute</button>
-          <button><span>📞</span>Call</button>
-          <button><span>🎥</span>Video</button>
+        <div class="action-button-row">
+          <div class="icon-button"><i class="ph ph-chat-circle-dots"></i><span>Message</span></div>
+          <div class="icon-button"><i class="ph ph-bell-slash"></i><span>Unmute</span></div>
+          <div class="icon-button"><i class="ph ph-phone"></i><span>Call</span></div>
+          <div class="icon-button"><i class="ph ph-video-camera"></i><span>Video</span></div>
         </div>
       </div>
     </header>
-    <!-- Fixed bar for collapsed state -->
+    <!-- Sticky bar for collapsed state -->
     <div class="profile-header-bar">
-      <img src="assets/back-arrow.svg" alt="Back" class="back-icon">
-      <div class="bar-center">
-        <img src="assets/icon1.svg" alt="Emoji" class="profile-emoji-bar">
-        <span class="profile-name-bar">Ronald Copper</span>
-        <span class="profile-status-bar">online</span>
+      <div class="back-icon ph-icon-bg"><i class="ph ph-caret-left"></i></div>
+      <div class="bar-center profile-info-row sticky">
+        <span class="profile-name">Ronald Copper</span>
+        <span class="profile-emoji">🧞‍♂️</span>
+        <span class="online-status">online</span>
       </div>
-      <img src="assets/menu.svg" alt="Menu" class="menu-icon">
+      <div class="menu-icon ph-icon-bg"><i class="ph ph-dots-three-outline"></i></div>
     </div>
     <div style="height: 120vh;"></div> <!-- Extra space for scrolling -->
   </div>
